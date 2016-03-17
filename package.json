@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Book",
   "main": "index.js",
-  "privage": "true",
+  "private": "true",
   "dependencies": {
     "basic-auth-connect": "1.0.0",
     "body-parser": "1.0.2",
