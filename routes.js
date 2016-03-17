@@ -35,6 +35,7 @@ module.exports = function(app) {
     }
     res.render('login', {msg:req.session.msg});
   });
+
   app.get('/logout', function(req, res){
     req.session.destroy(function(){
       res.redirect('/login');

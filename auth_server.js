@@ -15,11 +15,10 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(expressSession({
   secret: 'SECRET',
-  cookie: {maxAge: 60*60*1000},
+  cookie: {maxAge:2628000000},
   store: new mongoStore({
-      db: mongoose.connection.db,
-      collection: 'sessions'
+      mongooseConnection:mongoose.connection
     })
   }));
 require('./routes')(app);
-app.listen(80);
+app.listen(3000);
