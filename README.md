@@ -1,7 +1,7 @@
 # dbauth
 download and run with 
 ```
-https://github.com/mjcleme/dbauth.git
+git clone https://github.com/mjcleme/dbauth.git
 cd dbauth
 npm install
 node auth_server.js
